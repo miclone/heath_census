@@ -1,93 +1,148 @@
 /* Basic CSS for the navigation bar */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+}
+
+#site-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-style: bold;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
 nav {
-    background-color: #f0f0f0;
-    padding: 20px;
     display: flex;
+    background-color: #e096d4;
     align-items: center;
     justify-content: space-between;
-    
-  }
-  
-  nav ul {
+    height: 70px;
+}
+
+#menu {
+    display: grid;
+    width: 400px;
+    justify-content: left;
+    align-items: baseline;
+    left: calc(100% - 400px);
+    padding-bottom: 5px;
+}
+
+nav ul {
     list-style-type: none;
-    /* padding: 0; */
-  }
-  
-  nav ul li {
+}
+
+nav li {
     display: inline;
     margin-right: 10px;
-  }
-  
-  nav a {
+}
+
+#search {
+    display: block;
+    height: 22px;
+    padding-top: 5px;
+    justify-content: space-between;
+}
+
+nav a {
     text-decoration: none;
-    color: #333;
+    color: #811b1b;
     font-weight: bold;
-  }
-  
-  /* Basic CSS for the form elements */
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  div {
-    margin-bottom: 10px;
-  }
-  
-  label {
+    border-radius: 5px;
+}
+
+.analysisForm {
+    display: block;
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 200px;
+    align-items: center;
+    background-color: rgb(106, 175, 175);
+}
+
+.analysisForm label {
     display: inline-block;
-    width: 100px;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  select {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.analysisForm input {
+    margin-top: 10px;
+}
+
+.analysisForm select {
+    margin-top: 10px;
+}
+
+#addPatient {
+    margin-top: 8px;
+    margin-left: 294px;
+    transform: translateY(-36px);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
     width: 200px;
     padding: 5px;
-  }
-  
-  button {
+}
+
+button {
     padding: 7px 15px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Basic CSS for the report section */
-  h2 {
-    margin-top: 30px;
-  }
-  
-  #report,#result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-  }
-#result{
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
 }
-  #result img{
-    width: 200px;
-    height: 100px;
-  }
-  
+
+.report-container {
+    display: block;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(226, 222, 217);
+
+}
+
+#contact-us-main {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+    padding: 10px 10px;
+}
+
+#contactForm {
+    position: absolute;
+    display: block;
+    width: 400px;
+    left: calc(50% - 200px);
+}
+
+#contactForm div {
+    margin-top: 10px;
+    display: flex;
+}
+
+#contactForm div label {
+    width: 100px;
+}
+
+#contact-submit {
+    margin-top: 10px;
+    transform: translateX(-60px);
+}
+
+.searchCondition {
+    padding-left: 10px;
+    padding-top: 5px;
+}
